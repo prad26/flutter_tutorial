@@ -2,15 +2,22 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Scaffold(
+    home: Home(),
+  ));
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
-        title: Text('This is a Title!'),
+        title: Text('Title Me!'),
         centerTitle: true,
         backgroundColor: Colors.green[600],
       ),
       body: Center(
         child: Text(
-            'Hello there!',
+          'Hello there!',
           style: TextStyle(
             fontSize: 50.0,
             fontWeight: FontWeight.bold,
@@ -22,9 +29,9 @@ void main() {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Text('click'),
+        child: Text('butt'),
         backgroundColor: Colors.green[600],
       ),
-    ),
-  ));
+    );
+  }
 }
