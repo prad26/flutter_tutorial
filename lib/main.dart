@@ -15,11 +15,61 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.green[600],
       ),
-      body: Container(
-        padding: EdgeInsets.all(20),
-        margin: EdgeInsets.all(20),
-        color: Colors.grey[400],
-        child: Text('hello there'),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                color: Colors.cyan,
+                padding: EdgeInsets.all(30),
+                margin: EdgeInsets.all(10),
+                child: Text('one.one'),
+              ),
+              Container(
+                color: Colors.pinkAccent,
+                padding: EdgeInsets.all(30),
+                margin: EdgeInsets.all(10),
+                child: Text('one.two'),
+              ),
+              Container(
+                color: Colors.amber,
+                padding: EdgeInsets.all(30),
+                margin: EdgeInsets.all(10),
+                child: Text('one.three'),
+              ),
+            ],
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30),
+            margin: EdgeInsets.all(10),
+            child: Text(
+                'one',
+                textAlign: TextAlign.center,
+                ),
+          ),
+          Container(
+            color: Colors.pinkAccent,
+            padding: EdgeInsets.all(30),
+            margin: EdgeInsets.all(10),
+            child: Text(
+                'two',
+                textAlign: TextAlign.center,
+            ),
+          ),
+          Container(
+            color: Colors.amber,
+            padding: EdgeInsets.all(30),
+            margin: EdgeInsets.all(10),
+            child: Text(
+                'three',
+                textAlign: TextAlign.center,
+            ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
