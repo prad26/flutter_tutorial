@@ -19,26 +19,46 @@ class Home extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(20),
+            child: Text(
+              'Pick an Image!',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 50,
+                fontFamily: 'LemonJelly',
+              ),
+            ),
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                color: Colors.cyan,
-                padding: EdgeInsets.all(30),
-                margin: EdgeInsets.all(10),
-                child: Text('one.one'),
+              Expanded(
+                flex: 1,
+                child: Container(
+                    color: Colors.cyan,
+                    padding: EdgeInsets.all(5),
+                    margin: EdgeInsets.all(5),
+                    child: Image.asset('assets/space1.jpg')
+                )
               ),
-              Container(
-                color: Colors.pinkAccent,
-                padding: EdgeInsets.all(30),
-                margin: EdgeInsets.all(10),
-                child: Text('one.two'),
+              Expanded(
+                flex: 1,
+                child: Container(
+                    color: Colors.pinkAccent,
+                    padding: EdgeInsets.all(5),
+                    margin: EdgeInsets.all(5),
+                    child: Image.asset('assets/space2.jpg')
+                )
               ),
-              Container(
-                color: Colors.amber,
-                padding: EdgeInsets.all(30),
-                margin: EdgeInsets.all(10),
-                child: Text('one.three'),
+              Expanded(
+                flex: 1,
+                child: Container(
+                    color: Colors.amber,
+                    padding: EdgeInsets.all(5),
+                    margin: EdgeInsets.all(5),
+                    child: Image.asset('assets/space3.jpg')
+                )
               ),
             ],
           ),
@@ -47,7 +67,7 @@ class Home extends StatelessWidget {
             padding: EdgeInsets.all(30),
             margin: EdgeInsets.all(10),
             child: Text(
-                'one',
+                'One',
                 textAlign: TextAlign.center,
                 ),
           ),
@@ -56,7 +76,7 @@ class Home extends StatelessWidget {
             padding: EdgeInsets.all(30),
             margin: EdgeInsets.all(10),
             child: Text(
-                'two',
+                'Two',
                 textAlign: TextAlign.center,
             ),
           ),
@@ -65,7 +85,7 @@ class Home extends StatelessWidget {
             padding: EdgeInsets.all(30),
             margin: EdgeInsets.all(10),
             child: Text(
-                'three',
+                'Three',
                 textAlign: TextAlign.center,
             ),
           ),
@@ -73,7 +93,7 @@ class Home extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Text('butt'),
+        child: Icon(Icons.android),
         backgroundColor: Colors.green[600],
       ),
     );
